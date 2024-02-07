@@ -1,13 +1,17 @@
 import React from "react";
-import UserArticles from "./components/UserArticles";
 import NewsArticles from "./components/NewsArticles";
+import UsersArticles from "./components/UsersArticles";
 
 function App() {
   return (
-    <div className="">
-      <UserArticles />
-      <NewsArticles />
-    </div>
+    <main>
+      <section>
+        <UsersArticles />
+      </section>
+      <section>
+        <NewsArticles />
+      </section>
+    </main>
   );
 }
 
