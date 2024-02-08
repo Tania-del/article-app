@@ -11,7 +11,7 @@ const NewsArticles = () => {
   const fetchArticles = async () => {
     try {
       const response = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&page=${page}&pageSize=10&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
+        `https://newsapi.org/v2/top-headlines?country=us&page=${page}&pageSize=10&apiKey=d34cd0f297d94789a45831b67592e0da`
       );
       const data = await response.json();
       setArticles(data.articles || []);
