@@ -1,12 +1,12 @@
 import React from "react";
 import NewsArticles from "./components/NewsArticles";
-import UsersArticles from "./components/UsersArticles";
+import UserArticles from "./components/UserArticles";
 
 function App() {
   return (
     <main>
-      <section>
-        <UsersArticles />
+      <section className="mb-[100px]">
+        <UserArticles />
       </section>
       <section>
         <NewsArticles />
