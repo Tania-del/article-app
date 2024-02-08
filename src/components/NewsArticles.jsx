@@ -34,7 +34,7 @@ const NewsArticles = () => {
       <ul className="grid grid-cols-col gap-2 mb-5">
         {articles.map((article) => (
           <ArticleItem
-            key={article.id}
+            key={article.title}
             article={article}
             onAdd={() => dispatch(articleAdd(article))}
             showAddButton={true}

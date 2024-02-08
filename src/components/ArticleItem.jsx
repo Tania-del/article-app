@@ -2,7 +2,6 @@ import React from "react";
 
 const ArticleItem = ({
   article,
-  key,
   icon,
   onRemove,
   onPin,
@@ -11,7 +10,7 @@ const ArticleItem = ({
   showAddButton,
 }) => {
   return (
-    <li className="bg-primary p-2 border-2 flex flex-col " key={key}>
+    <li className="bg-primary p-2 border-2 flex flex-col ">
       <div className="flex-grow">
         {article.urlToImage ? (
           <img

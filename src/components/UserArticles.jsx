@@ -54,10 +54,10 @@ const UserArticles = () => {
             showRemoveButton={true}
           />
         )}
-        {userArticles.length > 0 ? (
+        {userArticles.length ? (
           filteredArticles?.map((article) => (
             <ArticleItem
-              key={article.title + article.author}
+              key={article.title}
               article={article}
               onRemove={() => dispatch(articleRemove(article))}
               onPin={() => {
@@ -68,7 +68,7 @@ const UserArticles = () => {
             />
           ))
         ) : (
-          <p>You don't have any articles yet...</p>
+          <p>Add article from news article...</p>
         )}
       </ul>
     </div>
